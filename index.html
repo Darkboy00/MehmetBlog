@@ -15,13 +15,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.js">
 </head>
 <body>
+    <script type="text/javascript">
+        const audio = new Audio();
+        audio.src = "button.mp3";
+    </script>
     <div class="wave"></div>
     <div class="wave"></div>
     <div class="wave"></div>
     <div class="wave"></div>
-    <a href="https://mehmetkaymakci.com/" target="_blank"> 
+    <a href="https://mehmetkaymakci.com/" target="_blank" onclick="audio.play()"> 
         <div class="card" style="float: left">
             <img src="Me.jpg" alt="Me" style="width: 100%;">
             <h1>Mehmet Kaymakcı</h1>
@@ -34,7 +39,7 @@
             <a href="https://darkboy00.itch.io/" target="_blank"><i class="fa fa-gamepad"></i></a><br><br>
         </div>
     </a>
-    <a href="index1.html">
+    <a href="index1.html" target="_blank" onclick="audio.play()">
         <div class="card" style="float: left;">
             <img src="FlappyBird.jpg" alt="FlappyBird" style="width: 100%;">
             <h4>UNITY İLE FLAPPY BIRD YAPIMI</h4>
@@ -45,7 +50,7 @@
             <h6>17/03/2023</h6>
         </div>
     </a>
-    <a href="index1.html">
+    <a href="index1.html" target="_blank" onclick="audio.play()">
         <div class="card" style="float: left;">
             <img src="DoodleJump.jpg" alt="DoodleJump" style="width: 100%;">
             <h4>UNITY İLE DOODLE JUMP YAPIMI</h4>
@@ -56,9 +61,9 @@
             <h6>17/03/2023</h6>
         </div>
     </a>
-    <a href="index1.html">
+    <a href="index1.html" target="_blank" onclick="audio.play()">
         <div class="card" style="float: left;">
-            <img src="EndlessRunnerSpaceGame.jpg" alt="EndlessRunnerSpaceGame" style="width: 100%;">
+            <img src="EndlessRunnerSpaceGame.jpg" alt="EndlessRunnerSpaceGame" style="width: 100%;" onclick="audio.play()">
             <h4>UNITY İLE ENDLESS RUNNER SPACE GAME</h4>
             <div class="w3-tag w3-large w3-round w3-yellow" style="padding: 1px; margin-bottom: 10px;"><div class="w3-tag w3-round w3-yellow w3-border w3-border-white" style="font-family: Audiowide, sans-serif;">UNITY</div></div>
             <div class="container-fluid" style="background-color: lightyellow;">
