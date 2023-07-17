@@ -3,6 +3,10 @@ body
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
+    animation-name: cardAnimation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
 }
 .card
 {
@@ -20,7 +24,7 @@ a
 }
 .card:hover
 {
-    animation-name: card;
+    animation-name: card, shake;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -127,4 +131,33 @@ h6
     bottom: -3.75em;
     animation: wave 22s -2s reverse infinite;
     opacity: 0.9;
+}
+@keyframes cardAnimation
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+@keyframes shake
+{
+    0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+    10% { transform: translate(-0.5px, -1px) rotate(-0.1deg); }
+    20% { transform: translate(-1.5px, 0px) rotate(0.1deg); }
+    30% { transform: translate(1.5px, 1px) rotate(0deg); }
+    40% { transform: translate(0.5px, -0.5px) rotate(0.1deg); }
+    50% { transform: translate(-0.5px, 1px) rotate(-0.1deg); }
+    60% { transform: translate(-1.5px, 0.5px) rotate(0deg); }
+    70% { transform: translate(1.5px, 0.5px) rotate(-0.1deg); }
+    80% { transform: translate(-0.5px, -0.5px) rotate(0.1deg); }
+    90% { transform: translate(0.5px, 1px) rotate(0deg); }
+    100% { transform: translate(0.5px, -1px) rotate(-0.1deg); }
 }
